@@ -24,13 +24,13 @@ If a wing had more than one parliamentarian then their speech order was the same
 
 Determine the speech order for an even session if the speech order for an odd session is given.
 
-###Input
+####Input
 
 The first line of the input contains N, the total number of parliamentarians. The following lines contain N integer numbers, the identification numbers of the members of parliament according to the speech order for an odd session.
 
 The total number of the members of parliament does not exceed 3000. Identification numbers do not exceed 65535.
 
-###Output
+####Output
 
 The output should contain the identification numbers of the members of parliament in accordance with the speech order for an even session.
 Sample
@@ -60,7 +60,7 @@ output
 
 ## Solution
 
-A Web application with html form that trasform input (odd session speech order) to output (even session speech order)
+A Web application with html form that trasforms input (odd session speech order) to output (even session speech order).
 
 ## Installation
 
