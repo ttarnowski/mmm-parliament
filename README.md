@@ -68,6 +68,14 @@ A Web application with html form that trasforms input (odd session speech order)
 2. `cd` into project root directory
 3. Run `composer install`
 
+## Usage
+
+Execute the following commands from the project directory to run php server on localhost:8999:
+
+1. set environment variable with path to your php executable file: `export PHP_EXECUTABLE_PATH='/usr/bin/php'`
+2. create php built-in server on localhost:8999: `./bin/run.sh`
+
+
 ## Packages
 
 ##### Dev Dependencies:
