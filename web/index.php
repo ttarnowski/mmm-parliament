@@ -13,11 +13,16 @@ if (isset($_POST['member_ids'])) {
 
     $command = new DetermineSpeechOrderForEvenSessionCommand();
 
-    $evenSessionSpeechOrder = call_user_func_array([$command, 'execute'], $commandArgs);
+    try {
+        $evenSessionSpeechOrder = call_user_func_array([$command, 'execute'], $commandArgs);
 
-    echo 'Results:<br/>';
+        echo 'Results:<br/>';
+        echo implode("<br/>", $evenSessionSpeechOrder);
+    } catch (Exception $e) {
+        echo 'Something went wrong:<br/>';
+        echo $e->getMessage();
+    }
 
-    echo implode("<br/>", $evenSessionSpeechOrder);
 }
 
 $content = ob_get_clean();
